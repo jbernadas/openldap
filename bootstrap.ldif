@@ -63,7 +63,7 @@ cn: Joseph Bernadas
 displayName: Joseph Bernadas
 uidNumber: 19F726
 gidNumber: 5000
-userPassword: alphRAlolonol
+userPassword: mypasswd
 gecos: Joseph Bernadas
 loginShell: /bin/bash
 homeDirectory: /home/jb
