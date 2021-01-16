@@ -1,0 +1,69 @@
+dn: cn=developer,dc=example,dc=org
+changetype: add
+objectclass: inetOrgPerson
+cn: developer
+givenname: developer
+sn: Developer
+displayname: Developer User
+mail: developer@gmail.com
+userpassword: developer_pass
+
+dn: cn=maintainer,dc=example,dc=org
+changetype: add
+objectclass: inetOrgPerson
+cn: maintainer
+givenname: maintainer
+sn: Maintainer
+displayname: Maintainer User
+mail: maintainer@gmail.com
+userpassword: maintainer_pass
+
+dn: cn=admin_gh,dc=example,dc=org
+changetype: add
+objectclass: inetOrgPerson
+cn: admin_gh
+givenname: admin_gh
+sn: AdminGithub
+displayname: Admin Github User
+mail: admin_gh@gmail.com
+userpassword: admin_gh_pass
+
+dn: ou=Groups,dc=example,dc=org
+changetype: add
+objectclass: organizationalUnit
+ou: Groups
+
+dn: ou=Users,dc=example,dc=org
+changetype: add
+objectclass: organizationalUnit
+ou: Users
+
+dn: cn=Admins,ou=Groups,dc=example,dc=org
+changetype: add
+cn: Admins
+objectclass: groupOfUniqueNames
+uniqueMember: cn=admin,dc=example,dc=org
+
+dn: cn=Maintaners,ou=Groups,dc=example,dc=org
+changetype: add
+cn: Maintaners
+objectclass: groupOfUniqueNames
+uniqueMember: cn=maintainer,dc=example,dc=org
+uniqueMember: cn=developer,dc=example,dc=org
+
+dn: uid=bernadas1,ou=Users,dc=example,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: bernadas1
+sn: bernadas
+givenName: Joseph
+cn: Joseph Bernadas
+displayName: Joseph Bernadas
+uidNumber: 19F726
+gidNumber: 5000
+userPassword: alphRAlolonol
+gecos: Joseph Bernadas
+loginShell: /bin/bash
+homeDirectory: /home/jb
